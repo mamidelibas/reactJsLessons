@@ -1,7 +1,20 @@
+import { Header } from "./Header";
+
 export default function Home() {
+  let firstName = "Muhammet ";
+  let age = 23;
+  function concolaBas() {
+    alert("merhaba");
+  }
   return (
     <>
-      <h1>NEXT-JS</h1>
+      <Header />
+      <h1>
+        Benim adım : {firstName} ve Yaşım : {age}
+      </h1>
+      <button onClick={concolaBas}>Alert Göster</button>
     </>
   );
 }
+
+// rfc : kısayol function açar
