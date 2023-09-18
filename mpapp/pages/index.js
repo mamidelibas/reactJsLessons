@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 
 export default function Home() {
@@ -17,6 +18,10 @@ export default function Home() {
   };
   return (
     <>
+      <Head>
+        <title>React Project</title>
+        <link rel="stylesheet" href="/mpapp/public/favicon.ico" />
+      </Head>
       <h1>
         Benim adım : {firstName} Yaşım : {age}
       </h1>
